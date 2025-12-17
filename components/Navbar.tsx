@@ -13,15 +13,15 @@ export default function Navbar() {
                 {[
                     { label: "الرئيسية", href: "/" },
                     { label: "بحث", isSearch: true },
-                    { label: "أضف عقارك", href: "#" },
-                    { label: "عن الشركة", href: "#" },
-                    { label: "خدماتنا", href: "#" },
-                    { label: "تواصل معنا", href: "#" },
+                    { label: "أضف عقارك", href: "/add-property" },
+                    { label: "عن الشركة", href: "/about-us" },
+                    { label: "خدماتنا", href: "/services" },
+                    { label: "تواصل معنا", href: "/contact-us" },
                 ].map((item, index) => (
                     <li key={index}>
                         {item.isSearch ? (
                             <div className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition-colors">
-                               
+
                                 <span>{item.label}</span>
                             </div>
                         ) : (
