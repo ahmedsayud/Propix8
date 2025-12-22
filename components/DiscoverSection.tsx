@@ -6,6 +6,7 @@ export default function DiscoverSection() {
 
     const properties = [
         {
+            id: "1",
             image: "/selected-1.png",
             location: "القاهرة الجديدة - التجمع الخامس",
             title: "فيلا فاخرة بحديقة خاصة",
@@ -13,6 +14,7 @@ export default function DiscoverSection() {
             amenities: { area: "520م²", beds: 5, baths: 4 }
         },
         {
+            id: "2",
             image: "/selected-2.png",
             location: "العاصمة الإدارية - حي المال والأعمال",
             title: "شقة فندقية فاخرة",
@@ -20,6 +22,7 @@ export default function DiscoverSection() {
             amenities: { area: "220م²", beds: 3, baths: 2 }
         },
         {
+            id: "3",
             image: "/selected-3.png",
             location: "الساحل الشمالي - رأس الحكمة",
             title: "شاليه بحديقة خاصة",
@@ -27,6 +30,7 @@ export default function DiscoverSection() {
             amenities: { area: "145م²", beds: 3, baths: 2 }
         },
         {
+            id: "4",
             image: "/selected-2.png",
             location: "المهندسين - جامعة الدول",
             title: "شقة وتجديد تشطيب فاخر",
@@ -34,6 +38,7 @@ export default function DiscoverSection() {
             amenities: { area: "250م²", beds: 3, baths: 3 }
         },
         {
+            id: "5",
             image: "/selected-3.png",
             location: "القاهرة الجديدة - التجمع الخامس",
             title: "فيلا مستقلة Standalone",
@@ -41,6 +46,7 @@ export default function DiscoverSection() {
             amenities: { area: "600م²", beds: 6, baths: 5 }
         },
         {
+            id: "6",
             image: "/selected-1.png",
             location: "الشيخ زايد - بيفرلي هيلز",
             title: "تاون هاوس كورنر",
