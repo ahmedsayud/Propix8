@@ -12,71 +12,86 @@ import {
 
 const Footer = () => {
     return (
-        <footer dir="rtl">
+        <footer dir="rtl" className="bg-[#3E5879] text-white">
             {/* Main Footer Content */}
-            <div className="bg-[#3E5879] text-white pt-20 pb-10">
-                <div className="container mx-auto px-4 md:px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="pt-16 pb-10 md:pt-20 md:pb-12">
+                <div className="container mx-auto px-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 text-center md:text-right">
 
                         {/* Company Info */}
-                        <div className="lg:col-span-1">
-                            <h3 className="text-2xl font-bold mb-6">اسم الشركة هنا</h3>
-                            <p className="text-gray-200 leading-relaxed mb-8 text-sm opacity-90">
+                        <div className="flex flex-col items-center md:items-start text-center md:text-right">
+                            <h3 className="text-2xl font-bold mb-5">Propix 8</h3>
+                            <p className="text-gray-200 leading-relaxed mb-8 text-sm opacity-90 max-w-sm">
                                 نسعى لتقديم تجربة عقارية مميزة تجمع بين الثقة،
                                 الجودة والابتكار في كل مشروع نقدمه.
                             </p>
-                            <button className="bg-white text-[#3E5879] px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-gray-100 transition-colors">
+                            <button className="w-full sm:w-auto bg-white text-[#3E5879] px-8 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gray-100 transition-all duration-300 shadow-lg shadow-black/10">
                                 <span>اكتشف وحدتك الآن</span>
                                 <FaArrowLeft className="text-sm" />
                             </button>
                         </div>
 
                         {/* Quick Links */}
-                        <div>
-                            <h3 className="text-xl font-bold mb-6">روابط سريعة</h3>
-                            <ul className="space-y-4">
-                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">عقارات للبيع</a></li>
-                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">المشاريع الجديدة</a></li>
-                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">الوحدات المميزة</a></li>
-                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">احجز معاينة</a></li>
-                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">خدماتنا</a></li>
+                        <div className="flex flex-col items-center md:items-start">
+                            <h3 className="text-xl font-bold mb-6 relative inline-block">
+                                روابط سريعة
+                                <span className="absolute bottom-[-10px] right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 w-12 h-1 bg-white/20 rounded-full"></span>
+                            </h3>
+                            <ul className="space-y-4 pt-2">
+                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm py-1 block">عقارات للبيع</a></li>
+                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm py-1 block">المشاريع الجديدة</a></li>
+                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm py-1 block">الوحدات المميزة</a></li>
+                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm py-1 block">احجز معاينة</a></li>
+                                <li><a href="#" className="text-gray-200 hover:text-white transition-colors text-sm py-1 block">خدماتنا</a></li>
                             </ul>
                         </div>
 
                         {/* Contact Us */}
-                        <div>
-                            <h3 className="text-xl font-bold mb-6">تواصل معنا</h3>
-                            <ul className="space-y-6">
-                                <li className="flex items-center gap-3">
-                                    <FaPhoneAlt className="text-gray-300" />
-                                    <span className="text-gray-200 text-sm ltr" dir="ltr">01000000000</span>
+                        <div className="flex flex-col items-center md:items-start">
+                            <h3 className="text-xl font-bold mb-6 relative inline-block">
+                                تواصل معنا
+                                <span className="absolute bottom-[-10px] right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 w-12 h-1 bg-white/20 rounded-full"></span>
+                            </h3>
+                            <ul className="space-y-6 pt-2">
+                                <li className="flex flex-col items-center md:flex-row gap-3">
+                                    <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center">
+                                        <FaPhoneAlt className="text-gray-300" />
+                                    </div>
+                                    <span className="text-gray-200 text-sm ltr font-sans" dir="ltr">01000000000</span>
                                 </li>
-                                <li className="flex items-center gap-3">
-                                    <FaEnvelope className="text-gray-300" />
+                                <li className="flex flex-col items-center md:flex-row gap-3">
+                                    <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center">
+                                        <FaEnvelope className="text-gray-300" />
+                                    </div>
                                     <span className="text-gray-200 text-sm font-sans">info@company.com</span>
                                 </li>
-                                <li className="flex items-center gap-3">
-                                    <FaMapMarkerAlt className="text-gray-300" />
+                                <li className="flex flex-col items-center md:flex-row gap-3">
+                                    <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center">
+                                        <FaMapMarkerAlt className="text-gray-300" />
+                                    </div>
                                     <span className="text-gray-200 text-sm">القاهرة، مصر</span>
                                 </li>
                             </ul>
                         </div>
 
                         {/* Follow Us */}
-                        <div>
-                            <h3 className="text-xl font-bold mb-6">تابعنا</h3>
-                            <div className="flex gap-4">
-                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300">
-                                    <FaFacebookF />
+                        <div className="flex flex-col items-center md:items-start">
+                            <h3 className="text-xl font-bold mb-6 relative inline-block">
+                                تابعنا
+                                <span className="absolute bottom-[-10px] right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 w-12 h-1 bg-white/20 rounded-full"></span>
+                            </h3>
+                            <div className="flex gap-4 pt-2">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                    <FaFacebookF className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300">
-                                    <FaInstagram />
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                    <FaInstagram className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300">
-                                    <FaTwitter />
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                    <FaTwitter className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300">
-                                    <FaYoutube />
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                    <FaYoutube className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
                             </div>
                         </div>
@@ -86,10 +101,10 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-white py-12 border-t border-gray-100">
-                <div className="container mx-auto px-4 text-center">
-                    <p className="text-[#3E5879] text-sm font-medium">
-                        © 2025 جميع الحقوق محفوظة | جميع الحقوق محفوظة لموقعنا
+            <div className="bg-[#2d415a] py-8">
+                <div className="container mx-auto px-6 text-center">
+                    <p className="text-gray-300 text-sm font-medium">
+                        © 2025 جميع الحقوق محفوظة | Propix 8
                     </p>
                 </div>
             </div>

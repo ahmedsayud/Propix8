@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+    const router = useRouter();
     const [activeTab, setActiveTab] = useState("كمبوندات"); // افتراضي كمبوندات زي الصورة
     const [status, setStatus] = useState("الكل");
 
@@ -146,7 +148,10 @@ export default function Hero() {
 
                         </div>
                         {/*Search Button */}
-                        <button className=" mt-2 bg-[#596593] text-white py-3 px-6 rounded-lg font-bold hover:bg-[#46517a] transition-all flex items-center justify-center gap-2">
+                        <button
+                            onClick={() => router.push('/search')}
+                            className=" mt-2 bg-[#596593] text-white py-3 px-6 rounded-lg font-bold hover:bg-[#46517a] transition-all flex items-center justify-center gap-2"
+                        >
 
                             البحث عن العقارات
                         </button>
