@@ -1,1 +1,1 @@
-export const API_BASE_URL = '/api/proxy/';
+export const API_BASE_URL = 'https://propix8.com/api/';
