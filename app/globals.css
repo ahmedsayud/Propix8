@@ -3,6 +3,7 @@
 @theme {
   --font-sans: var(--font-cairo);
   --color-primary: #3E5879;
+  --color-primary-dark: #2E425B;
 }
 
 body {

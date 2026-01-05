@@ -11,9 +11,9 @@ export default function ServicesPage() {
 
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-12">
-                    <Link href="/" className="hover:text-[#3E5879] transition-colors">الرئيسية</Link>
+                    <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
                     <FaChevronLeft className="text-xs" />
-                    <span className="text-[#3E5879] font-medium">خدماتنا</span>
+                    <span className="text-primary font-medium">خدماتنا</span>
                 </div>
 
                 {/* Intro Section */}
@@ -21,7 +21,7 @@ export default function ServicesPage() {
 
                     {/* Right Side: Text Content */}
                     <div className="w-full lg:w-1/2 order-2 lg:order-1 text-right">
-                        <span className="text-[#3E5879] font-medium mb-2 block">لماذا تختارنا؟</span>
+                        <span className="text-primary font-medium mb-2 block">لماذا تختارنا؟</span>
                         <h1 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-6 leading-tight">
                             اكتشف ما يميز خبرتنا في مجال العقارات
                         </h1>
@@ -45,17 +45,17 @@ export default function ServicesPage() {
 
                 {/* Services List Section */}
                 <div className="w-full mx-auto mb-24">
-                    <h2 className="text-3xl font-bold text-[#3E5879] mb-12 text-right">خدماتنا</h2>
+                    <h2 className="text-3xl font-bold text-primary mb-12 text-right">خدماتنا</h2>
 
                     <div className="space-y-6">
 
                         {/* Service Card 1 */}
                         <div className="bg-[#ECEFF3] rounded-3xl p-8 md:p-10 flex items-center justify-between shadow-[0_12px_24px_rgba(0,0,0,0.06)] hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
                             <div>
-                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#3E5879] transition-colors">بيع عقارات</h3>
+                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-primary transition-colors">بيع عقارات</h3>
                                 <p className="text-gray-500 max-w-lg">نقدم خدمة احترافية لبيع عقارك بسرعة وأفضل سعر عبر تقييم دقيق وتسويق متطور.</p>
                             </div>
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl flex items-center justify-center text-[#3E5879] text-3xl md:text-4xl shadow-sm group-hover:bg-[#3E5879] group-hover:text-white transition-colors duration-300">
+                            <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl flex items-center justify-center text-primary text-3xl md:text-4xl shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                 <BsHouses />
                             </div>
                         </div>
@@ -63,10 +63,10 @@ export default function ServicesPage() {
                         {/* Service Card 2 */}
                         <div className="bg-[#ECEFF3] rounded-3xl p-8 md:p-10 flex items-center justify-between shadow-[0_12px_24px_rgba(0,0,0,0.06)] hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
                             <div>
-                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#3E5879] transition-colors">تأجر عقارات</h3>
+                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-primary transition-colors">تأجر عقارات</h3>
                                 <p className="text-gray-500 max-w-lg">نوفر حلولاً متكاملة لتأجير عقارك مع استهداف المستأجرين المناسبين وضمان أفضل عائد.</p>
                             </div>
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl flex items-center justify-center text-[#3E5879] text-3xl md:text-4xl shadow-sm group-hover:bg-[#3E5879] group-hover:text-white transition-colors duration-300">
+                            <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl flex items-center justify-center text-primary text-3xl md:text-4xl shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                 <BiKey />
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
 
                 {/* Recommended Section (New) */}
                 <div className="w-full mx-auto mb-16">
-                    <h2 className="text-3xl font-bold text-[#3E5879] mb-12 text-right">نرشح لك</h2>
+                    <h2 className="text-3xl font-bold text-primary mb-12 text-right">نرشح لك</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[1, 2, 3].map((item, index) => (
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
-                                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-sm font-bold text-[#3E5879]">
+                                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-sm font-bold text-primary">
                                         للبيع
                                     </div>
                                 </div>
@@ -97,16 +97,16 @@ export default function ServicesPage() {
                                 {/* Content */}
                                 <div className="p-6">
                                     <div className="flex items-center gap-2 text-gray-500 text-sm mb-2">
-                                        <FaMapMarkerAlt className="text-[#3E5879]" />
+                                        <FaMapMarkerAlt className="text-primary" />
                                         <span>القاهرة الجديدة - التجمع الخامس</span>
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-[#1a1a1a] mb-4 group-hover:text-[#3E5879] transition-colors">
+                                    <h3 className="text-xl font-bold text-[#1a1a1a] mb-4 group-hover:text-primary transition-colors">
                                         فيلا فاخرة بحديقة خاصة
                                     </h3>
 
                                     <div className="flex items-center justify-between mb-6">
-                                        <span className="text-2xl font-bold text-[#3E5879]">5,800,000 ج.م</span>
+                                        <span className="text-2xl font-bold text-primary">5,800,000 ج.م</span>
                                     </div>
 
                                     {/* Specs */}

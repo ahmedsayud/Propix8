@@ -5,22 +5,22 @@ export default function LifestyleSection() {
     const stats = [
         {
             number: "260+", label: "مشروعات تم تنفيذها", icon: (
-                <BsBuildings className="w-8 h-8 md:w-10 md:h-10 text-[#596593] mb-2" />
+                <BsBuildings className="w-8 h-8 md:w-10 md:h-10 text-primary mb-2" />
             )
         },
         {
             number: "190+", label: "عقارات تم بيعها", icon: (
-                <BsHouseCheck className="w-8 h-8 md:w-10 md:h-10 text-[#596593] mb-2" />
+                <BsHouseCheck className="w-8 h-8 md:w-10 md:h-10 text-primary mb-2" />
             )
         },
         {
             number: "500+", label: "عملاء سعداء", icon: (
-                <BsEmojiSmile className="w-8 h-8 md:w-10 md:h-10 text-[#596593] mb-2" />
+                <BsEmojiSmile className="w-8 h-8 md:w-10 md:h-10 text-primary mb-2" />
             )
         },
         {
             number: "20+", label: "مدن نغطيها", icon: (
-                <BsMap className="w-8 h-8 md:w-10 md:h-10 text-[#596593] mb-2" />
+                <BsMap className="w-8 h-8 md:w-10 md:h-10 text-primary mb-2" />
             )
         },
     ];
@@ -61,25 +61,25 @@ export default function LifestyleSection() {
                 </div>
 
             </div>
-                {/* Stats Grid */}
- <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full mx-auto bg-[#ECEFF3] py-10 px-10">
-  {stats.map((stat, index) => (
-    <div
-      key={index}
-      className="flex flex-col items-center text-center  rounded-2xl transition-all duration-300 ease-in-out hover:scale-120 "
-    >
-      <div className="mb-4 transition-transform duration-300">
-        {stat.icon}
-      </div>
-      <span className="text-3xl font-bold text-gray-800 mb-2  duration-300 ">
-        {stat.number}
-      </span>
-      <span className="text-gray-500 transition-all duration-300 ">
-        {stat.label}
-      </span>
-    </div>
-  ))}
-</div>
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full mx-auto bg-[#ECEFF3] py-10 px-10">
+                {stats.map((stat, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col items-center text-center  rounded-2xl transition-all duration-300 ease-in-out hover:scale-120 "
+                    >
+                        <div className="mb-4 transition-transform duration-300">
+                            {stat.icon}
+                        </div>
+                        <span className="text-3xl font-bold text-gray-800 mb-2  duration-300 ">
+                            {stat.number}
+                        </span>
+                        <span className="text-gray-500 transition-all duration-300 ">
+                            {stat.label}
+                        </span>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }

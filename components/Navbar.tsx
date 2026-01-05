@@ -29,11 +29,11 @@ export default function Navbar() {
                     <li key={index}>
                         <Link
                             href={item.href || "#"}
-                            className="hover:text-[#596593] transition-all duration-300 relative group"
+                            className="hover:text-primary transition-all duration-300 relative group"
                         >
                             {item.label}
                             {!item.isSearch && (
-                                <span className="absolute bottom-[-4px] right-0 w-0 h-0.5 bg-[#596593] transition-all duration-300 group-hover:w-full"></span>
+                                <span className="absolute bottom-[-4px] right-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                             )}
                         </Link>
                     </li>
@@ -42,9 +42,11 @@ export default function Navbar() {
 
             {/* Actions (Desktop) */}
             <div className="hidden md:flex items-center gap-4">
-                <button className="bg-[#596593] text-white px-7 py-2.5 rounded-xl hover:bg-[#46517a] transition-all duration-300 shadow-lg shadow-[#596593]/20 font-medium">
-                    تسجيل الدخول
-                </button>
+                <Link href="/login">
+                    <button className="bg-primary text-white px-7 py-2.5 rounded-xl hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/20 font-medium">
+                        تسجيل الدخول
+                    </button>
+                </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -65,7 +67,7 @@ export default function Navbar() {
                             <li key={index}>
                                 <Link
                                     href={item.href || "#"}
-                                    className="block py-2 border-b border-gray-50 text-lg hover:text-[#596593] transition-colors"
+                                    className="block py-2 border-b border-gray-50 text-lg hover:text-primary transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.label}
@@ -73,9 +75,11 @@ export default function Navbar() {
                             </li>
                         ))}
                         <li className="pt-4">
-                            <button className="w-full bg-[#596593] text-white px-6 py-3 rounded-xl hover:bg-[#46517a] transition-all duration-300 font-medium text-lg">
-                                تسجيل الدخول
-                            </button>
+                            <Link href="/login" onClick={() => setIsOpen(false)}>
+                                <button className="w-full bg-primary text-white px-6 py-3 rounded-xl hover:bg-primary-dark transition-all duration-300 font-medium text-lg">
+                                    تسجيل الدخول
+                                </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>

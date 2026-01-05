@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
 
                     {/* Right Side: Text Content */}
                     <div className="w-full md:w-5/12 text-right">
-                        <h2 className="text-3xl md:text-5xl font-bold text-[#2C3E50] mb-6">
+                        <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
                             ماذا يقول عملاؤنا
                         </h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-8">
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
                             نضع رضا العميل في صدارة أولوياتنا، ونسعى دائماً لتجاوز توقعاته.
                             كلماتهم هي شهادة نعتز بها ودافع لنواصل تقديم الأفضل.
                         </p>
-                        <button className="bg-[#2C3E50] text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-[#1a252f] transition-colors">
+                        <button className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-[#1a252f] transition-colors">
                             عرض المزيد
                         </button>
                     </div>
@@ -57,13 +57,13 @@ const TestimonialsSection = () => {
                                 onMouseEnter={() => setActiveIndex(index)}
                                 className={`relative flex items-center p-6 rounded-lg transition-all duration-1000 ease-in-out cursor-pointer text-right bg-white overflow-hidden
                   ${index === activeIndex
-                                        ? 'scale-110 shadow-xl border-l-8 border-[#2C3E50] z-10'
+                                        ? 'scale-110 shadow-xl border-l-8 border-primary z-10'
                                         : 'scale-90 shadow-sm border border-gray-100 hover:shadow-md z-0'
                                     }
                 `}
                             >
                                 {/* Dark Overlay for inactive state */}
-                                <div className={`absolute inset-0 bg-[#2C3E50]/20 transition-opacity duration-1000 ease-in-out z-20 ${index === activeIndex ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} />
+                                <div className={`absolute inset-0 bg-primary/20 transition-opacity duration-1000 ease-in-out z-20 ${index === activeIndex ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} />
 
                                 {/* Avatar */}
                                 <div className="ml-6 shrink-0 relative z-10">
@@ -77,14 +77,14 @@ const TestimonialsSection = () => {
                                 {/* Content */}
                                 <div className="flex-1 relative z-10">
                                     <div className="flex justify-between items-start mb-2">
-                                        <h3 className={`font-bold transition-all duration-1000 ease-in-out ${index === activeIndex ? 'text-xl text-[#2C3E50]' : 'text-lg text-gray-800'}`}>
+                                        <h3 className={`font-bold transition-all duration-1000 ease-in-out ${index === activeIndex ? 'text-xl text-primary' : 'text-lg text-gray-800'}`}>
                                             {testimonial.name}
                                         </h3>
                                     </div>
                                     <p className="text-gray-500 text-sm mb-3">
                                         {testimonial.role}
                                     </p>
-                                    <div className="flex text-[#2C3E50]">
+                                    <div className="flex text-primary">
                                         {[...Array(5)].map((_, i) => (
                                             <FaStar key={i} className="text-sm" />
                                         ))}

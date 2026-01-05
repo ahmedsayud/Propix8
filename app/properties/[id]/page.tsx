@@ -87,7 +87,7 @@ export default function PropertyDetailsPage() {
             <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-6">
 
                 {/* Breadcrumbs */}
-                <div className="flex items-center gap-2 text-sm text-[#3E5879] mb-8">
+                <div className="flex items-center gap-2 text-sm text-primary mb-8">
                     <Link href="/" className="hover:underline font-bold">الرئيسية</Link>
                     <FaChevronLeft className="text-[10px] text-gray-300" />
                     <span className="text-gray-400 font-bold whitespace-nowrap overflow-hidden text-ellipsis">وحدات في مصر</span>
@@ -99,7 +99,7 @@ export default function PropertyDetailsPage() {
                         <h1 className="text-3xl lg:text-[40px] font-black text-gray-800 mb-5 leading-tight">{propertyData.title}</h1>
 
                         <div className="flex flex-wrap items-center gap-6 lg:gap-10">
-                            <span className="bg-[#3E5879] text-white px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider">{propertyData.status}</span>
+                            <span className="bg-primary text-white px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider">{propertyData.status}</span>
 
                             <div className="flex items-center gap-2">
                                 <div className="flex text-yellow-400 gap-0.5">
@@ -116,7 +116,7 @@ export default function PropertyDetailsPage() {
                     </div>
 
                     <div className="text-right lg:text-left w-full lg:w-auto shrink-0 self-end lg:self-start bg-gray-50/50 p-4 rounded-2xl border border-gray-100/50">
-                        <div className="flex items-baseline justify-end lg:justify-start gap-2 text-[#3E5879] mb-1">
+                        <div className="flex items-baseline justify-end lg:justify-start gap-2 text-primary mb-1">
                             <span className="text-2xl font-black">ج.م</span>
                             <span className="text-[44px] font-black tracking-tighter leading-none">{propertyData.price}</span>
                         </div>
@@ -131,10 +131,10 @@ export default function PropertyDetailsPage() {
                     <div className="lg:col-span-8 relative h-[550px] rounded-[2.5rem] overflow-hidden group shadow-2xl shadow-gray-200">
                         <Image src={mainImage} alt="Main Property" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                         <div className="absolute top-6 right-6 flex gap-3">
-                            <button className="bg-white/90 backdrop-blur-md p-4 rounded-2xl text-[#3E5879] hover:bg-[#3E5879] hover:text-white transition-all shadow-xl active:scale-90">
+                            <button className="bg-white/90 backdrop-blur-md p-4 rounded-2xl text-primary hover:bg-primary hover:text-white transition-all shadow-xl active:scale-90">
                                 <FaRegHeart className="text-lg" />
                             </button>
-                            <button className="bg-white/90 backdrop-blur-md p-4 rounded-2xl text-[#3E5879] hover:bg-[#3E5879] hover:text-white transition-all shadow-xl active:scale-90">
+                            <button className="bg-white/90 backdrop-blur-md p-4 rounded-2xl text-primary hover:bg-primary hover:text-white transition-all shadow-xl active:scale-90">
                                 <FaShareAlt className="text-lg" />
                             </button>
                         </div>
@@ -142,7 +142,7 @@ export default function PropertyDetailsPage() {
                     <div className="lg:col-span-4 grid grid-cols-2 gap-5">
                         {propertyData.images.map((img, idx) => (
                             <div key={idx}
-                                className={`relative h-full min-h-[160px] rounded-[2rem] overflow-hidden cursor-pointer group border-4 transition-all duration-500 shadow-lg ${mainImage === img ? 'border-[#3E5879]' : 'border-transparent opacity-80 hover:opacity-100'}`}
+                                className={`relative h-full min-h-[160px] rounded-[2rem] overflow-hidden cursor-pointer group border-4 transition-all duration-500 shadow-lg ${mainImage === img ? 'border-primary' : 'border-transparent opacity-80 hover:opacity-100'}`}
                                 onClick={() => setMainImage(img)}>
                                 <Image src={img} alt={`Gallery ${idx}`} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                             </div>
@@ -156,17 +156,17 @@ export default function PropertyDetailsPage() {
                         {/* Quick Info Boxes (Moved here to be next to sidebar) */}
                         <div className="mb-16">
                             <div className="flex items-center gap-4 mb-10">
-                                <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                 <h2 className="text-3xl font-black text-gray-800 tracking-tight">نظرة عامة</h2>
                             </div>
                             <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
                                 {propertyData.amenities.map((item, idx) => (
-                                    <div key={idx} className="bg-white border border-gray-100 p-3.5 rounded-[1.5rem] flex items-center justify-between group hover:border-[#3E5879]/30 transition-all duration-500 shadow-sm hover:shadow-xl hover:-translate-y-1">
+                                    <div key={idx} className="bg-white border border-gray-100 p-3.5 rounded-[1.5rem] flex items-center justify-between group hover:border-primary/30 transition-all duration-500 shadow-sm hover:shadow-xl hover:-translate-y-1">
                                         <div className="flex flex-col items-start order-2 min-w-0">
                                             <span className="text-gray-400 text-[9px] font-black uppercase tracking-tight mb-0.5 truncate w-full">{item.label}</span>
                                             <span className="text-gray-800 font-black text-base leading-none truncate w-full">{item.value}</span>
                                         </div>
-                                        <div className="text-xl text-[#3E5879] bg-gray-50 p-2.5 rounded-xl group-hover:bg-[#3E5879] group-hover:text-white transition-all duration-500 order-1 shadow-inner shrink-0">
+                                        <div className="text-xl text-primary bg-gray-50 p-2.5 rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-500 order-1 shadow-inner shrink-0">
                                             {item.icon}
                                         </div>
                                     </div>
@@ -177,14 +177,14 @@ export default function PropertyDetailsPage() {
                         {/* Details Table */}
                         <div className="mb-16">
                             <div className="flex items-center gap-4 mb-10">
-                                <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                 <h2 className="text-3xl font-black text-gray-800 tracking-tight">معلومات</h2>
                             </div>
                             <div className="bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden shadow-sm p-10">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8">
                                     {propertyData.details.map((item, idx) => (
                                         <div key={idx} className="flex flex-col gap-2 group">
-                                            <span className="text-gray-400 text-[11px] font-black uppercase tracking-[0.15em] transition-colors group-hover:text-[#3E5879]">{item.label}</span>
+                                            <span className="text-gray-400 text-[11px] font-black uppercase tracking-[0.15em] transition-colors group-hover:text-primary">{item.label}</span>
                                             <span className="text-gray-800 font-black text-[15px] leading-tight">{item.value}</span>
                                         </div>
                                     ))}
@@ -195,7 +195,7 @@ export default function PropertyDetailsPage() {
                         {/* Description */}
                         <div className="mb-16">
                             <div className="flex items-center gap-4 mb-8">
-                                <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                 <h2 className="text-3xl font-black text-gray-800 tracking-tight">وصف</h2>
                             </div>
                             <p className="text-gray-500 leading-[2.2] font-bold text-[17px] text-justify">
@@ -206,7 +206,7 @@ export default function PropertyDetailsPage() {
                         {/* Virtual Tour */}
                         <div className="mb-16">
                             <div className="flex items-center gap-4 mb-10">
-                                <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                 <h2 className="text-3xl font-black text-gray-800 tracking-tight">جولة داخل العقار</h2>
                             </div>
                             <div className="relative h-[500px] rounded-[3rem] overflow-hidden group cursor-pointer shadow-2xl border-8 border-gray-50/50">
@@ -222,7 +222,7 @@ export default function PropertyDetailsPage() {
                         {/* Floor Plan */}
                         <div className="mb-16">
                             <div className="flex items-center gap-4 mb-10">
-                                <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                 <h2 className="text-3xl font-black text-gray-800 tracking-tight">تصميم المساحة الداخلية</h2>
                             </div>
                             <div className="relative h-[550px] w-full rounded-[3rem] overflow-hidden border border-gray-100 bg-white p-12 shadow-sm flex items-center justify-center group">
@@ -234,16 +234,16 @@ export default function PropertyDetailsPage() {
                         <div className="mb-16">
                             <div className="flex items-center justify-between mb-10">
                                 <div className="flex items-center gap-4">
-                                    <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                                    <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                                     <h2 className="text-3xl font-black text-gray-800 tracking-tight">موقع الخريطة</h2>
                                 </div>
-                                <button className="text-[#3E5879] font-black text-sm hover:scale-105 active:scale-95 bg-[#3E5879]/5 px-6 py-3 rounded-2xl border border-[#3E5879]/10 transition-all shadow-sm">افتح الخريطة كاملة</button>
+                                <button className="text-primary font-black text-sm hover:scale-105 active:scale-95 bg-primary/5 px-6 py-3 rounded-2xl border border-primary/10 transition-all shadow-sm">افتح الخريطة كاملة</button>
                             </div>
                             <div className="relative h-[450px] rounded-[3rem] overflow-hidden border-8 border-gray-50/50 shadow-2xl">
                                 <Image src="/property_location_map.png" alt="Map View" fill className="object-cover" />
-                                <div className="absolute inset-0 bg-[#3E5879]/10 pointer-events-none"></div>
+                                <div className="absolute inset-0 bg-primary/10 pointer-events-none"></div>
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                                    <div className="w-12 h-12 bg-[#3E5879] rounded-full flex items-center justify-center text-white shadow-2xl shadow-[#3E5879]/50 animate-bounce">
+                                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl shadow-primary/50 animate-bounce">
                                         <HiOutlineLocationMarker className="text-2xl" />
                                     </div>
                                 </div>
@@ -253,7 +253,7 @@ export default function PropertyDetailsPage() {
 
                     {/* Sidebar */}
                     <aside className="lg:col-span-4 sticky top-28">
-                        <div className="bg-white border border-gray-100 rounded-[3rem] p-10 shadow-2xl shadow-gray-200/60 border-t-8 border-t-[#3E5879]/10">
+                        <div className="bg-white border border-gray-100 rounded-[3rem] p-10 shadow-2xl shadow-gray-200/60 border-t-8 border-t-primary/10">
                             <h3 className="text-2xl font-black text-gray-800 mb-10 tracking-tight">تواصل معنا الآن</h3>
 
                             <div className="flex items-center gap-5 mb-12">
@@ -263,8 +263,8 @@ export default function PropertyDetailsPage() {
                                 <div className="flex-1">
                                     <div className="text-gray-400 text-[10px] font-black uppercase tracking-[0.25em] mb-2 font-black">المطور العقاري</div>
                                     <div className="text-gray-800 font-black text-2xl mb-3 tracking-tighter">مي خالد</div>
-                                    <div className="text-[#3E5879] font-black text-base flex items-center gap-3 group cursor-pointer transition-all hover:translate-x-1" dir="ltr">
-                                        <div className="bg-[#3E5879]/10 p-2.5 rounded-2xl group-hover:bg-[#3E5879] group-hover:text-white transition-all shadow-sm">
+                                    <div className="text-primary font-black text-base flex items-center gap-3 group cursor-pointer transition-all hover:translate-x-1" dir="ltr">
+                                        <div className="bg-primary/10 p-2.5 rounded-2xl group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
                                             <FaPhone className="text-[12px] rotate-[270deg]" />
                                         </div>
                                         <span className="tracking-widest">010000000</span>
@@ -273,19 +273,19 @@ export default function PropertyDetailsPage() {
                             </div>
 
                             <div className="space-y-5">
-                                <button className="w-full bg-[#3E5879] text-white py-6 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-[#2D425C] transition-all shadow-2xl shadow-[#3E5879]/30 active:scale-[0.97] hover:-translate-y-1">
+                                <button className="w-full bg-primary text-white py-6 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-[#2D425C] transition-all shadow-2xl shadow-primary/30 active:scale-[0.97] hover:-translate-y-1">
                                     <FaPhone className="text-base rotate-[270deg]" />
                                     اتصل بنا الآن
                                 </button>
-                                <button className="w-full border-2 border-gray-100 text-gray-500 py-6 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-4 hover:border-[#3E5879] hover:text-[#3E5879] hover:bg-gray-50/50 transition-all active:scale-[0.97] hover:-translate-y-1">
+                                <button className="w-full border-2 border-gray-100 text-gray-500 py-6 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-4 hover:border-primary hover:text-primary hover:bg-gray-50/50 transition-all active:scale-[0.97] hover:-translate-y-1">
                                     <FaEnvelope className="text-base" />
                                     إرسال رسالة بريدية
                                 </button>
                             </div>
 
                             <div className="mt-10 pt-10 border-t-2 border-gray-50 flex flex-col items-center gap-4">
-                                <button className="text-gray-400 text-sm font-black flex items-center gap-3 hover:text-[#3E5879] transition-all group">
-                                    <div className="bg-gray-50 p-2.5 rounded-xl group-hover:bg-[#3E5879]/10 transition-all">
+                                <button className="text-gray-400 text-sm font-black flex items-center gap-3 hover:text-primary transition-all group">
+                                    <div className="bg-gray-50 p-2.5 rounded-xl group-hover:bg-primary/10 transition-all">
                                         <FaShareAlt className="text-xs" />
                                     </div>
                                     مشاركة هدا العقار مع الأصدقاء
@@ -299,7 +299,7 @@ export default function PropertyDetailsPage() {
                 {/* Similar Properties */}
                 <div className="mt-32">
                     <div className="flex items-center gap-4 mb-14">
-                        <div className="w-2 h-10 bg-[#3E5879] rounded-full shadow-lg shadow-[#3E5879]/20"></div>
+                        <div className="w-2 h-10 bg-primary rounded-full shadow-lg shadow-primary/20"></div>
                         <h2 className="text-[34px] font-black text-gray-800 tracking-tight">عقارات مشابهة قد تعجبك</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
@@ -308,7 +308,7 @@ export default function PropertyDetailsPage() {
                         ))}
                     </div>
                     <div className="flex justify-center">
-                        <button className="bg-white border-2 border-gray-100 text-gray-800 px-16 py-6 rounded-[2rem] font-black text-lg hover:border-[#3E5879] hover:text-[#3E5879] hover:bg-gray-50/50 transition-all shadow-xl shadow-gray-100/50 active:scale-[0.97] hover:-translate-y-1">
+                        <button className="bg-white border-2 border-gray-100 text-gray-800 px-16 py-6 rounded-[2rem] font-black text-lg hover:border-primary hover:text-primary hover:bg-gray-50/50 transition-all shadow-xl shadow-gray-100/50 active:scale-[0.97] hover:-translate-y-1">
                             شاهد المزيد من العقارات المميزة
                         </button>
                     </div>

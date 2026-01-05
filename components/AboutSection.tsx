@@ -9,7 +9,7 @@ const AboutSection = () => {
                 {/* Header */}
                 <div className="flex flex-col items-center text-center mb-12">
                     {/* Badge */}
-                    <div className="bg-[#2C3E50] text-white px-[41px] py-[7px] rounded-[16px] text-lg font-medium mb-8">
+                    <div className="bg-primary text-white px-[41px] py-[7px] rounded-[16px] text-lg font-medium mb-8">
                         من نحن
                     </div>
 
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 <div className="flex flex-wrap justify-center gap-6">
                     {/* Card 1: Innovation */}
                     <div className="w-full md:w-[397px] h-auto md:h-[320px] bg-[#F8F9FA] rounded-[8px] p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-[#2C3E50] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
+                        <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
                             <FaRegLightbulb />
                         </div>
                         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">الابتكار</h3>
@@ -47,7 +47,7 @@ const AboutSection = () => {
 
                     {/* Card 2: Quality */}
                     <div className="w-full md:w-[397px] h-auto md:h-[320px] bg-[#F8F9FA] rounded-[8px] p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-[#2C3E50] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
+                        <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
                             <PiMedal />
                         </div>
                         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">الجودة</h3>
@@ -58,7 +58,7 @@ const AboutSection = () => {
 
                     {/* Card 3: Trust */}
                     <div className="w-full md:w-[397px] h-auto md:h-[320px] bg-[#F8F9FA] rounded-[8px] p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300">
-                        <div className="w-16 h-16 bg-[#2C3E50] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
+                        <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">
                             <FaRegHandshake />
                         </div>
                         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">الثقة</h3>

@@ -91,12 +91,12 @@ export default function Hero() {
                                 <input
                                     type="number"
                                     placeholder="الأدنى"
-                                    className="flex-1 bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-[#596593] w-1/2"
+                                    className="flex-1 bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-primary w-1/2"
                                 />
                                 <input
                                     type="number"
                                     placeholder="الأعلى"
-                                    className="flex-1 bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-[#596593] w-1/2"
+                                    className="flex-1 bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-primary w-1/2"
                                 />
                             </div>
                         </div>
@@ -106,7 +106,7 @@ export default function Hero() {
                             <input
                                 type="text"
                                 placeholder="المدينة أو المنطقة"
-                                className="bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-[#596593]"
+                                className="bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-primary"
                             />
                         </div>
 
@@ -120,12 +120,12 @@ export default function Hero() {
                                     <input
                                         type="number"
                                         placeholder="الأدنى"
-                                        className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-[#596593]"
+                                        className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-primary"
                                     />
                                     <input
                                         type="number"
                                         placeholder="الأعلى"
-                                        className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-[#596593]"
+                                        className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-center focus:outline-none focus:border-primary"
                                     />
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export default function Hero() {
                         <div className="flex flex-col gap-2 text-center">
                             <label className="text-sm text-gray-500">نوع العقار</label>
                             <div className="flex gap-3 relative">
-                                <select className="flex-1 w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-right appearance-none focus:outline-none focus:border-[#596593]">
+                                <select className="flex-1 w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-2 text-right appearance-none focus:outline-none focus:border-primary">
                                     <option>جميع الأنواع</option>
                                 </select>
                                 <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
@@ -150,7 +150,7 @@ export default function Hero() {
                         {/*Search Button */}
                         <button
                             onClick={() => router.push('/search')}
-                            className=" mt-2 bg-[#596593] text-white py-3 px-6 rounded-lg font-bold hover:bg-[#46517a] transition-all flex items-center justify-center gap-2"
+                            className=" mt-2 bg-primary text-white py-3 px-6 rounded-lg font-bold hover:bg-primary-dark transition-all flex items-center justify-center gap-2"
                         >
 
                             البحث عن العقارات

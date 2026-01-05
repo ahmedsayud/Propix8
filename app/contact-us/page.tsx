@@ -9,9 +9,9 @@ export default function ContactUsPage() {
 
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-                    <Link href="/" className="hover:text-[#3E5879] transition-colors">الرئيسية</Link>
+                    <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
                     <FaChevronLeft className="text-xs" />
-                    <span className="text-[#3E5879] font-medium">تواصل معنا</span>
+                    <span className="text-primary font-medium">تواصل معنا</span>
                 </div>
 
                 {/* Top Banner Image */}
@@ -29,15 +29,15 @@ export default function ContactUsPage() {
 
                     {/* Right Side: Contact Info */}
                     <div className="w-full lg:w-5/12 pt-8">
-                        <h1 className="text-3xl font-bold text-[#3E5879] mb-8 relative inline-block">
+                        <h1 className="text-3xl font-bold text-primary mb-8 relative inline-block">
                             اتصل بنا
-                            <span className="absolute -bottom-2 right-0 w-12 h-1 bg-[#3E5879] rounded-full"></span>
+                            <span className="absolute -bottom-2 right-0 w-12 h-1 bg-primary rounded-full"></span>
                         </h1>
 
                         <div className="space-y-8 mt-8">
                             {/* Address */}
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-[#3E5879] text-xl group-hover:bg-[#3E5879] group-hover:text-white transition-colors duration-300">
+                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-primary text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <FaMapMarkerAlt />
                                 </div>
                                 <div>
@@ -48,7 +48,7 @@ export default function ContactUsPage() {
 
                             {/* Phone */}
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-[#3E5879] text-xl group-hover:bg-[#3E5879] group-hover:text-white transition-colors duration-300">
+                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-primary text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <FaPhoneAlt />
                                 </div>
                                 <div>
@@ -59,7 +59,7 @@ export default function ContactUsPage() {
 
                             {/* Email */}
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-[#3E5879] text-xl group-hover:bg-[#3E5879] group-hover:text-white transition-colors duration-300">
+                                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-primary text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                     <FaEnvelope />
                                 </div>
                                 <div>
@@ -74,7 +74,7 @@ export default function ContactUsPage() {
                     <div className="w-full lg:w-5/12 -mt-24 lg:-mt-48 relative z-10">
                         <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100">
                             <div className="text-center mb-8">
-                                <h2 className="text-2xl font-bold text-[#3E5879] mb-2">نحن هنا لخدمتك</h2>
+                                <h2 className="text-2xl font-bold text-primary mb-2">نحن هنا لخدمتك</h2>
                                 <p className="text-gray-500 text-sm">يسعدنا تواصلك معنا والإجابة عن جميع استفساراتك</p>
                             </div>
 
@@ -82,9 +82,9 @@ export default function ContactUsPage() {
                                 <input
                                     type="text"
                                     placeholder="أدخل اسمك هنا"
-                                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-[#3E5879]/20 outline-none transition-all placeholder:text-gray-400"
+                                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400"
                                 />
-                                <select className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-[#3E5879]/20 outline-none transition-all text-gray-500 appearance-none cursor-pointer">
+                                <select className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-500 appearance-none cursor-pointer">
                                     <option value="">الموقع</option>
                                     <option value="cairo">القاهرة</option>
                                     <option value="giza">الجيزة</option>
@@ -94,7 +94,7 @@ export default function ContactUsPage() {
                                     <input
                                         type="tel"
                                         placeholder="رقم التليفون"
-                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-[#3E5879]/20 outline-none transition-all placeholder:text-gray-400"
+                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400"
                                     />
                                     <div className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
                                         <span className="text-xs font-bold text-gray-500">EG</span>
@@ -105,10 +105,10 @@ export default function ContactUsPage() {
                                 <textarea
                                     rows={4}
                                     placeholder="رسالتك"
-                                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-[#3E5879]/20 outline-none transition-all placeholder:text-gray-400 resize-none"
+                                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border-0 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400 resize-none"
                                 ></textarea>
 
-                                <button className="w-full bg-[#3E5879] text-white font-bold py-3 rounded-xl hover:bg-[#2C3E50] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
+                                <button className="w-full bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
                                     أرسل رسالة
                                 </button>
                             </form>

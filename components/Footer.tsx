@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer dir="rtl" className="bg-[#3E5879] text-white">
+        <footer dir="rtl" className="bg-primary text-white">
             {/* Main Footer Content */}
             <div className="pt-16 pb-10 md:pt-20 md:pb-12">
                 <div className="container mx-auto px-6">
@@ -25,7 +25,7 @@ const Footer = () => {
                                 نسعى لتقديم تجربة عقارية مميزة تجمع بين الثقة،
                                 الجودة والابتكار في كل مشروع نقدمه.
                             </p>
-                            <button className="w-full sm:w-auto bg-white text-[#3E5879] px-8 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gray-100 transition-all duration-300 shadow-lg shadow-black/10">
+                            <button className="w-full sm:w-auto bg-white text-primary px-8 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gray-100 transition-all duration-300 shadow-lg shadow-black/10">
                                 <span>اكتشف وحدتك الآن</span>
                                 <FaArrowLeft className="text-sm" />
                             </button>
@@ -81,16 +81,16 @@ const Footer = () => {
                                 <span className="absolute bottom-[-10px] right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 w-12 h-1 bg-white/20 rounded-full"></span>
                             </h3>
                             <div className="flex gap-4 pt-2">
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 group">
                                     <FaFacebookF className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 group">
                                     <FaInstagram className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 group">
                                     <FaTwitter className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-[#3E5879] transition-all duration-300 group">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 group">
                                     <FaYoutube className="text-lg group-hover:scale-110 transition-transform" />
                                 </a>
                             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-[#2d415a] py-8">
+            <div className="bg-primary-dark py-8">
                 <div className="container mx-auto px-6 text-center">
                     <p className="text-gray-300 text-sm font-medium">
                         © 2025 جميع الحقوق محفوظة | Propix 8

@@ -60,7 +60,7 @@ export default function DiscoverSection() {
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#3E5879] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                         "استكشف ما نقدمه"
                     </h2>
                     <p className="text-gray-500 text-lg">
@@ -74,8 +74,8 @@ export default function DiscoverSection() {
                         <button
                             key={index}
                             className={`px-6 py-2 rounded-full border transition-all duration-300 ${index === 0
-                                ? "bg-[#3E5879] text-white border-[#3E5879]"
-                                : "bg-white text-gray-600 border-gray-200 hover:border-[#3E5879] hover:text-[#3E5879]"
+                                ? "bg-primary text-white border-primary"
+                                : "bg-white text-gray-600 border-gray-200 hover:border-primary hover:text-primary"
                                 }`}
                         >
                             {tab}

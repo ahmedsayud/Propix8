@@ -30,7 +30,7 @@ const FAQSection = () => {
     return (
         <section className="py-20 bg-[#F8F9FA]" dir="rtl">
             <div className="container mx-auto px-4 max-w-4xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2C3E50] text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
                     الأسئلة الشائعة
                 </h2>
 
@@ -44,10 +44,10 @@ const FAQSection = () => {
                   ${activeId === faq.id ? 'rounded-t-2xl' : 'rounded-2xl'}
                 `}
                             >
-                                <span className="text-xl font-bold text-[#2C3E50]">
+                                <span className="text-xl font-bold text-primary">
                                     {faq.question}
                                 </span>
-                                <span className="text-[#2C3E50]">
+                                <span className="text-primary">
                                     {activeId === faq.id ? <FaChevronUp /> : <FaChevronDown />}
                                 </span>
                             </button>
@@ -58,7 +58,7 @@ const FAQSection = () => {
                   ${activeId === faq.id ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}
                 `}
                             >
-                                <div className="bg-[#415a77] text-white p-8 rounded-b-2xl text-lg leading-relaxed text-center">
+                                <div className="bg-primary text-white p-8 rounded-b-2xl text-lg leading-relaxed text-center">
                                     {faq.answer}
                                 </div>
                             </div>

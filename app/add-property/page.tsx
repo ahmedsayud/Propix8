@@ -11,15 +11,15 @@ export default function AddPropertyPage() {
 
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-12">
-                    <Link href="/" className="hover:text-[#3E5879] transition-colors">الرئيسية</Link>
+                    <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
                     <FaChevronLeft className="text-xs" />
-                    <span className="text-[#3E5879] font-medium">أضف عقارك</span>
+                    <span className="text-primary font-medium">أضف عقارك</span>
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-24">
                     {/* Right Side: Text Content */}
                     <div className="w-full lg:w-5/12 pt-8">
-                        <h1 className="text-3xl md:text-5xl font-bold text-[#3E5879] mb-8 leading-tight">
+                        <h1 className="text-3xl md:text-5xl font-bold text-primary mb-8 leading-tight">
                             خلي عقارك يوصل لأكبر عدد من العملاء
                         </h1>
                         <p className="text-gray-600 text-lg leading-relaxed text-justify pl-8">
@@ -33,10 +33,10 @@ export default function AddPropertyPage() {
                         {/* Card 1 */}
                         <div className="group bg-white p-10 py-12 rounded-2xl shadow-sm flex items-center justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                             <div>
-                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#3E5879] transition-colors">أدرج تفاصيل وحدتك الآن</h3>
+                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-primary transition-colors">أدرج تفاصيل وحدتك الآن</h3>
                                 <p className="text-gray-500 text-lg">أضف جميع المعلومات المتعلقة بوحدتك</p>
                             </div>
-                            <div className="w-20 h-20 bg-[#3E5879] rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-[#2C3E50]">
+                            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-primary-dark">
                                 <BiHomeAlt />
                             </div>
                         </div>
@@ -44,10 +44,10 @@ export default function AddPropertyPage() {
                         {/* Card 2 */}
                         <div className="group bg-white p-10 py-12 rounded-2xl shadow-sm flex items-center justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                             <div>
-                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#3E5879] transition-colors">سيتصل بك أحد وكلائنا المتخصصين</h3>
+                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-primary transition-colors">سيتصل بك أحد وكلائنا المتخصصين</h3>
                                 <p className="text-gray-500 text-lg">سنساعدك في العثور على أفضل مشتري</p>
                             </div>
-                            <div className="w-20 h-20 bg-[#3E5879] rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-[#2C3E50]">
+                            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-primary-dark">
                                 <RiCustomerService2Line />
                             </div>
                         </div>
@@ -55,10 +55,10 @@ export default function AddPropertyPage() {
                         {/* Card 3 */}
                         <div className="group bg-white p-10 py-12 rounded-2xl shadow-sm flex items-center justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                             <div>
-                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#3E5879] transition-colors">قابل المشترين من خلالنا</h3>
+                                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-3 group-hover:text-primary transition-colors">قابل المشترين من خلالنا</h3>
                                 <p className="text-gray-500 text-lg">نحن هنا لمساعدتك في العثور على أفضل المشترين الجادين لإتمام الصفقة بسلاسة</p>
                             </div>
-                            <div className="w-20 h-20 bg-[#3E5879] rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-[#2C3E50]">
+                            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-4xl shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-primary-dark">
                                 <BsPersonCheck />
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default function AddPropertyPage() {
                 {/* Form Section */}
                 <div className="mt-24 max-w-4xl mx-auto">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold text-[#3E5879] mb-3">أضف عقارك</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-3">أضف عقارك</h2>
                         <p className="text-gray-500">قم بإدراج تفاصيل الوحدات الخاصة بك</p>
                     </div>
 
@@ -81,7 +81,7 @@ export default function AddPropertyPage() {
                                 <input
                                     type="text"
                                     placeholder="أدخل اسمك هنا"
-                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50"
+                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50"
                                 />
                             </div>
 
@@ -91,7 +91,7 @@ export default function AddPropertyPage() {
                                 <input
                                     type="email"
                                     placeholder="بريدك الإلكتروني"
-                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50"
+                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50"
                                 />
                             </div>
 
@@ -101,7 +101,7 @@ export default function AddPropertyPage() {
                                 <input
                                     type="tel"
                                     placeholder="هاتفك"
-                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50"
+                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50"
                                 />
                             </div>
 
@@ -111,7 +111,7 @@ export default function AddPropertyPage() {
                                 <input
                                     type="text"
                                     placeholder="عنوانك"
-                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50"
+                                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50"
                                 />
                             </div>
                         </div>
@@ -119,7 +119,7 @@ export default function AddPropertyPage() {
                         {/* Property Type */}
                         <div className="flex flex-col gap-2">
                             <label className="text-sm font-bold text-gray-700">نوع العقار</label>
-                            <select className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50 appearance-none cursor-pointer" defaultValue="">
+                            <select className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50 appearance-none cursor-pointer" defaultValue="">
                                 <option value="" disabled>حدد نوع العقار</option>
                                 <option value="apartment">شقة</option>
                                 <option value="villa">فيلا</option>
@@ -134,13 +134,13 @@ export default function AddPropertyPage() {
                             <textarea
                                 rows={4}
                                 placeholder="اكتب رسالتك هنا"
-                                className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#3E5879] transition-colors bg-gray-50/50 resize-none"
+                                className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary transition-colors bg-gray-50/50 resize-none"
                             ></textarea>
                         </div>
 
                         {/* Submit Button */}
                         <div className="flex justify-end pt-4">
-                            <button className="bg-[#3E5879] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#2C3E50] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
+                            <button className="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
                                 إرسال رسالة
                             </button>
                         </div>

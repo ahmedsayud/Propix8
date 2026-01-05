@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/api/proxy/:path*',
+        destination: 'https://propix8.com/api/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

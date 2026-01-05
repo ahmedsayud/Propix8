@@ -1,6 +1,9 @@
+"use client";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./globals.css";
@@ -43,24 +46,22 @@ const cairo = localFont({
   variable: "--font-cairo",
 });
 
-export const metadata: Metadata = {
-  title: "Propix 8",
-  description: "Real Estate Company",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const isAuthPage = pathname === "/login" || pathname === "/signup" || pathname === "/forgot-password";
+
   return (
     <html lang="ar" dir="rtl">
       <body
         className={`${cairo.variable} antialiased`}
       >
-        <Navbar />
+        {!isAuthPage && <Navbar />}
         {children}
-        <Footer />
+        {!isAuthPage && <Footer />}
       </body>
     </html>
   );

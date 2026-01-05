@@ -10,9 +10,9 @@ export default function AboutUsPage() {
 
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-                    <Link href="/" className="hover:text-[#3E5879] transition-colors">الرئيسية</Link>
+                    <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
                     <FaChevronLeft className="text-xs" />
-                    <span className="text-[#3E5879] font-medium">عن الشركة</span>
+                    <span className="text-primary font-medium">عن الشركة</span>
                 </div>
 
                 {/* Top Banner Image */}
@@ -31,9 +31,9 @@ export default function AboutUsPage() {
                     {/* Right Side: Text Content */}
                     <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col items-end text-right">
                         <div className="max-w-[713px] p-8 rounded-3xl transition-all duration-500 hover:shadow-xl hover:bg-gray-50 hover:-translate-y-2 cursor-default group">
-                            <h2 className="text-[32px] font-bold text-[#3E5879] mb-4 relative inline-block group-hover:text-[#2C3E50] transition-colors">
+                            <h2 className="text-[32px] font-bold text-primary mb-4 relative inline-block group-hover:text-primary-dark transition-colors">
                                 معلومات عنا
-                                <span className="absolute -bottom-2 right-0 w-16 h-1 bg-[#3E5879] rounded-full group-hover:w-full transition-all duration-700"></span>
+                                <span className="absolute -bottom-2 right-0 w-16 h-1 bg-primary rounded-full group-hover:w-full transition-all duration-700"></span>
                             </h2>
                             <p className="text-[#1a1a1a] text-[24px] font-normal leading-[1.6] text-justify mt-4">
                                 "هذا النص هو مثال نصي نستخدم في تصميم المواقع والتطبيقات كحشو مؤقت. الهدف منه هو ملء المساحات وعرض التنسيق بصرياً دون الاعتماد على محتوى نهائي. يظهر شكل النص كيف تبدو فقرات الصفحة ويوفر رؤية واضحة لتنسيق التصميم"
@@ -60,7 +60,7 @@ export default function AboutUsPage() {
 
                 {/* Team Section */}
                 <div className="bg-[#F5F7FA] rounded-[40px] p-8 md:p-16 pb-0 md:pb-0 mb-48 text-center relative">
-                    <div className="inline-block bg-[#3E5879] text-white px-8 py-2 rounded-full text-lg font-bold mb-6">
+                    <div className="inline-block bg-primary text-white px-8 py-2 rounded-full text-lg font-bold mb-6">
                         من نحن
                     </div>
                     <h3 className="text-xl md:text-3xl font-bold text-[#1a1a1a] max-w-4xl mx-auto mb-12 leading-relaxed">
